@@ -19,55 +19,47 @@
     <header>
       <div class="topnav" >
         <div class="top-bar" style="position: sticky">
-          <a href="#home" class="active">Tim Baker</a>
+          <!-- Navigation links for 992px width or more -->
+          <a href="index.html" class="active">Tim Baker</a>
           <div class="inner-menu">
             <a href="index.html">Home</a>
-            <a href="#contact">Resume</a>
-            <a href="#about">Developmental Goals</a>
-            <a href="#contact">Blueprint</a>
-          </div>
-        </div>
-        <!-- Navigation links (hidden by default) -->
+            <a href="resume.html">Resume</a>
+            <a href="goals.html">Developmental Goals</a>
+            <a href="blueprint.html">Blueprint</a>
+            <a href="#" href="javascript:void(0)" onclick="artifacts()">Artifacts <i class="fas fa-arrow-down"></i></a>
+      </div>
+        
+        <!-- Navigation links for Mobile -->
         <div id="myLinks" style="display: none">
-          <a href="#news">Home</a>
-          <a href="#contact">Resume</a>
-          <a href="#about">Developmental Goals</a>
-          <a href="#contact">Blueprint</a>
-          <a href="#contact" href="javascript:void(0)" onclick="artifacts()"
-            >Artifacts</a
-          >
-          <div class="artifacts-div" id="artifact" style="display: none">
-            <a href="">Artifact 1</a>
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="goals.html">Developmental Goals</a>
+            <a href="blueprint.html">Blueprint</a>
+            <a href="javascript:void(0)" onclick="artifacts()">Artifacts <i class="fas fa-arrow-down"></i></a>
+            
+        </div>
+
+        <a id="hamburger" href="javascript:void(0);" class="icon" onclick="navHamburger()">
+            <i class="fa fa-bars"></i>
+        </a>
+        </div>
+        <div class="artifacts-div" id="artifact" style="display: none">
+            <a href="artifact-1.html">Artifact 1</a>
             <a href="">Artifact 2</a>
             <a href="">Artifact 3</a>
             <a href="">Artifact 4</a>
             <a href="">Artifact 5</a>
             <a href="">Artifact 6</a>
-          </div>
         </div>
-
-        <a
-          id="hamburger"
-          href="javascript:void(0);"
-          class="icon"
-          onclick="navHamburger()"
-        >
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
+        
     </header>
 
     <main>
-      <div class="wrapper">
+      <div class="">
         <div class="welcome">
           <div class="welcome-info">
             <h2>Welcome to my Page!</h2>
-            <p>
-              My name is Tim Baker and I am a graduate student in the
-              Educational Research and Evaluation program at Northern Illinois
-              University. This portfolio was created to fulfill the requirements
-              for ETR 699C.
-            </p>
+            <p>My name is Tim Baker and I am a graduate student in the Educational Research and Evaluation program at Northern Illinois University. This portfolio was created to fulfill the requirements for ETR 699C.</p>
           </div>
           <img src="" alt="" />
           <!-- https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80 -->
@@ -77,14 +69,10 @@
             <div class="background-image"></div>
             <div class="statement-inner">
               <h2>Personal Statement</h2>
-              <p id="personalstatement">
-                Upon starting my doctoral studies, I was sure I was going to be
-                a qualitative researcher. As part of my program of study I
-                started taking quantitative research classes first. After
-                completing my first class I was surprised to find that I had
-                found a strong interest in statistics.
-              </p>
-              <div class="button">
+              <div id="statement">
+                <p id="personalstatement" class="p-statement">Upon starting my doctoral studies, I was sure I was going to be a qualitative researcher. As part of my program of study I started taking quantitative research classes first. After completing my first class I was surprised to find that I had found a strong interest in statistics.</p>
+              </div>
+              <div class="button" id="buttonStatement">
                 <a
                   id="statement-link"
                   href="javascript:void(0);"
@@ -119,7 +107,7 @@
         </div> -->
     </main>
     <section>
-      <div class="wrapper"></div>
+      <div class=""></div>
     </section>
     <!-- I have found through taking classes in this program that statistics are a useful and valuable tool in research.  The ability to be able to use statistics for research is something that is sought after and rewarding.  Being able to complete statistical analysis for research projects with your peers and students is a skill that I will use to help others develop their own research as well as help work with on my own. -->
 
@@ -127,27 +115,23 @@
   </body>
 
   <footer class="main-footer">
-    <div class="line">
-      <a href="#news">Home</a>
-      <a href="#contact">Resume</a>
-      <a href="#about">Developmental Goals</a>
-      <a href="#contact">Blueprint</a>
-    </div>
-    <!-- <div class='line'>
-      <div class="line-two">
-        <a href="">Artifact 1</a>
-        <a href="">Artifact 2</a>
-      </div>
-      <div class="line-two">
-        <a href="">Artifact 3</a>
-        <a href="">Artifact 4</a>
-      </div>
-      <div class="line-two">
-        <a href="">Artifact 5</a>
-        <a href="">Artifact 6</a>
-      </div>
-       -->
 
-    <span>&copy;2021 Nathan English</span>
+    <div class="outter-lines">
+      <div class="line">
+        <a href=""><i class="fas fa-file-signature"></i>Resume</a>
+        <p>Want to hire me? View my resume online.</p>
+      </div>
+      <div class="line">
+        <a href=""><i class="fab fa-twitter-square"></i>Twitter</a>
+        <p>Follow me for more information and opinions.</p>
+      </div>
+      <div class="line">
+        <a href=""><i class="fab fa-linkedin"></i>LinkedIn</a>
+        <p>Let's get connected on LinkedIn.</p>
+      </div>
+    </div>
+    
+
+    <span> Created by &copy;2021 Nathan English</span>
   </footer>
 </html>

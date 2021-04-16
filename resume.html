@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tim Baker</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/39b2a24396.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="topnav" >
+        <div class="top-bar" style="position: sticky">
+          <!-- Navigation links for 992px width or more -->
+          <a href="index.html" class="active">Tim Baker</a>
+          <div class="inner-menu">
+            <a href="index.html">Home</a>
+            <a href="#">Resume</a>
+            <a href="goals.html">Developmental Goals</a>
+            <a href="blueprint.html">Blueprint</a>
+            <a href="#" href="javascript:void(0)" onclick="artifacts()">Artifacts <i class="fas fa-arrow-down"></i></a>
+      </div>
+        
+        <!-- Navigation links for Mobile -->
+        <div id="myLinks" style="display: none">
+            <a href="index.html">Home</a>
+            <a href="resune.html">Resume</a>
+            <a href="goals.html">Developmental Goals</a>
+            <a href="blueprint.html">Blueprint</a>
+            <a href="javascript:void(0)" onclick="artifacts()">Artifacts <i class="fas fa-arrow-down"></i></a>
+            
+        </div>
+
+        <a id="hamburger" href="javascript:void(0);" class="icon" onclick="navHamburger()">
+            <i class="fa fa-bars"></i>
+        </a>
+        </div>
+        <div class="artifacts-div" id="artifact" style="display: none">
+            <a href="artifact-1.html">Artifact 1</a>
+            <a href="">Artifact 2</a>
+            <a href="">Artifact 3</a>
+            <a href="">Artifact 4</a>
+            <a href="">Artifact 5</a>
+            <a href="">Artifact 6</a>
+        </div>
+        
+    </header>
+
+    <main>
+        <div class="wrapper">
+            <div class="resume-wrapper">
+                <div class="resume-inner-info">
+                    <img src="data:image/jpeg;base64,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" alt="">
+                    <div class="resume-top-info">
+                         <h3>Tim Baker</h3>
+                         <p>Persons title</p>
+                         <ul>
+                             <li>Sterling, Illinois</li>
+                             <li>tbaker81@yahoo.com</li>
+                             <li>(815)631 - 2873</li>
+                         </ul>
+                     </div>
+                </div>
+                <div class="objective-outter">
+                    
+                </div>
+                <div class="education-outter">
+                    <div class="education-inner">
+                        <h3>Education</h3>
+                        <div class="education">
+                            <p><b>Northern Illinois University</b>, DeKalb, IL</p>
+                            <p>Doctorate of Philosophy, Instructional Technology</p>
+                            <p>2014 - present</p>
+                        </div>
+
+                        <div class="education">
+                            <p><b>Northern Illinois University</b>, DeKalb, IL</p>
+                            <p>Master of Science, Educational Research and Evaluation</p>
+                            <p>2018 - Expected Spring 2019</p>
+                        </div>
+                        <div class="education">
+                            <p><b>Quincy University</b>, Quincy, IL</p>
+                            <p>Master of Science in Education, Educational Studies – Special Education</p>
+                            <p>2011-2012</p>
+                        </div>
+                        <div class="education">
+                            <p><b>De Paul University</b>, Chicago, IL<p>
+                            <p>Bachelor of Arts in Sociology, Minor in Modern Social Movements</p>
+                            <p>2007-2010</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience-outter">
+                    <div class="experience-inner">
+                        <h3>Experience</h3>
+                        <div class="experience">
+                            <p><b>Northern Illinois University</b>, DeKalb, IL<p>
+                            <p>Teaching Assistant/Graduate Assistant/Research Assistant <p>
+                            <p>2014 - Present</p>
+                            <ol>
+                                <li>Teach ETT 231 (Digital Visual Literacy for Learning) and ETR 440 (Classroom Assessment Techniques) for ETRA</li>
+                                <li> Provide guidance to students and create documents for their use. </li>
+                                <li> Assist faculty in research projects in qualitative analysis of research data. </li>
+                            </ol>
+                        </div>
+                        <div class="experience">
+                            <p><b>Ashford University</b>, Clinton, IA<p>
+                            <p>Associate Faculty – Adjunct Online Instructor<p>
+                            <p>2012 - 2016</p>
+                            <ol>
+                                <li>Posting faculty guidance and expectations.</li>
+                                <li>Participating in classroom discussion boards.</li>
+                                <li>Assessing student submittals for originality and authenticity.</li>
+                            </ol>
+                        </div>
+                        <div class="experience">
+                            <p><b>Ashford University</b>, Clinton, IA<p>
+                            <p>Writing Instructional Specialist<p>
+                            <p>2012 - 2013</p>
+                            <ol>
+                                <li>Provide guidance and support via email and phone to 60-100 Ashford University teaching assistants and staff per five week rotation.</li>
+                                <li>Monitor and evaluate 60-100 online courses per five week rotation.</li>
+                                <li>Deliver constructive feedback to 60-100 teaching assistants per five week rotation.</li>
+                                <li>Contribute to the development of instructional and support materials.</li>
+                                <li>Created reports on teaching assistant progress.</li>
+                                <li>Guide faculty in assessing student submittals for originality and authenticity.</li>
+                            </ol>
+                        </div>
+                        <div class="experience">
+                            <p><b> Sauk Valley Community College - ABC AmeriCorps at Rock Falls High Schooly</b>,  Dixon, IL<p>
+                            <p>Tutor/Instructor<p>
+                            <p>2010 - 2012</p>
+                            <ol>
+                                <li> Tutor and mentor high school aged students.</li>
+                                <li>Create and instruct ACT Prep program.</li>
+                                <li>Assisted at risk and special needs students to develop study skills and work towards graduation.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="associations">
+                    <h3>PROFESSIONAL ASSOCIATIONS</h3>
+                    <ol>
+                        <li> Association for Education Communications and Technology (2014-Present)</li>
+                        <li>National Association of Special Education Teachers (2011-Present)</li>
+                        <li>Association for Middle Level Education (2011-Present)</li>
+                    </ol>
+                    
+                </div>
+            </div>
+            
+            <script type="text/javascript" src="js/main.js"></script>
+        </div>
+    </main>
+        
+  </body>
+
+  <footer class="main-footer">
+
+    <div class="outter-lines">
+      <div class="line">
+        <a href=""><i class="fas fa-file-signature"></i>Resume</a>
+        <p>Want to hire me? View my resume online.</p>
+      </div>
+      <div class="line">
+        <a href=""><i class="fab fa-twitter-square"></i>Twitter</a>
+        <p>Follow me for more information and opinions.</p>
+      </div>
+      <div class="line">
+        <a href=""><i class="fab fa-linkedin"></i>LinkedIn</a>
+        <p>Let's get connected on LinkedIn.</p>
+      </div>
+    </div>
+    
+
+    <span> Created by &copy;2021 Nathan English</span>
+  </footer>
+</html>

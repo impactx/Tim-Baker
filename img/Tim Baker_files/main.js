@@ -1,11 +1,8 @@
 const mylinks = document.getElementById('myLinks');
 const artifact = document.getElementById('artifact');
-const statement_div = document.getElementById('statement')
-
-
 
 function navHamburger() {
-
+    
     if (mylinks.style.display === 'block') {
         mylinks.style.display = 'none';
         artifact.style.display = "none";
@@ -32,7 +29,7 @@ window.addEventListener('resize', reportWindowSize);
 
 function artifacts() {
     const artifact = document.getElementById('artifact');
-
+    
     if (artifact.style.display === 'flex') {
         artifact.style.display = 'none';
     } else {

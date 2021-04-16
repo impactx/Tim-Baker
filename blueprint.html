@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tim Baker</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/39b2a24396.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="topnav" >
+        <div class="top-bar" style="position: sticky">
+          <!-- Navigation links for 992px width or more -->
+          <a href="index.html" class="active">Tim Baker</a>
+          <div class="inner-menu">
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="goals.html">Developmental Goals</a>
+            <a href="blueprint.html">Blueprint</a>
+            <a href="#" href="javascript:void(0)" onclick="artifacts()">Artifacts <i class="fas fa-arrow-down"></i></a>
+      </div>
+        
+        <!-- Navigation links for Mobile -->
+        <div id="myLinks" style="display: none">
+            <a href="index.html">Home</a>
+            <a href="resune.html">Resume</a>
+            <a href="goals.html">Developmental Goals</a>
+            <a href="blueprint.html">Blueprint</a>
+            <a href="javascript:void(0)" onclick="artifacts()">Artifacts <i class="fas fa-arrow-down"></i></a>
+            
+        </div>
+
+        <a id="hamburger" href="javascript:void(0);" class="icon" onclick="navHamburger()">
+            <i class="fa fa-bars"></i>
+        </a>
+        </div>
+        <div class="artifacts-div" id="artifact" style="display: none">
+            <a href="artifact-1.html">Artifact 1</a>
+            <a href="">Artifact 2</a>
+            <a href="">Artifact 3</a>
+            <a href="">Artifact 4</a>
+            <a href="">Artifact 5</a>
+            <a href="">Artifact 6</a>
+        </div>
+        
+    </header>
+
+    <main>
+        <div class="wrapper">
+            <div class="blueprint">
+                <h2>Blueprint</h2>
+                <img src="img/blueprint.png" alt="">
+            </div>
+            <script type="text/javascript" src="js/main.js"></script>
+        </div>
+    </main>
+        
+  </body>
+
+  <footer class="main-footer">
+
+    <div class="outter-lines">
+      <div class="line">
+        <a href=""><i class="fas fa-file-signature"></i>Resume</a>
+        <p>Want to hire me? View my resume online.</p>
+      </div>
+      <div class="line">
+        <a href=""><i class="fab fa-twitter-square"></i>Twitter</a>
+        <p>Follow me for more information and opinions.</p>
+      </div>
+      <div class="line">
+        <a href=""><i class="fab fa-linkedin"></i>LinkedIn</a>
+        <p>Let's get connected on LinkedIn.</p>
+      </div>
+    </div>
+    
+
+    <span> Created by &copy;2021 Nathan English</span>
+  </footer>
+</html>

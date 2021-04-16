@@ -1,5 +1,5 @@
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif
 }
 p {
   color: rgba(0, 0, 0, 0.8);
@@ -33,6 +33,7 @@ p {
 /* Style navigation menu links */
 .top-bar a:first-child {
   flex-grow: 2;
+  
 }
 
 .topnav a {
@@ -54,10 +55,15 @@ p {
   top: 0;
 }
 
+
+
+
+
 /* Style the active link (or home/logo) */
 .active {
   background: linear-gradient(#338bff, #006eff);
   color: white;
+
 }
 
 .artifacts-div {
@@ -72,10 +78,7 @@ p {
 }
 
 /* Wrappers ! */
-.wrapper {
-  width: 85%;
-  margin: auto;
-}
+
 
 .blueprint {
   margin: 100px auto;
@@ -84,14 +87,14 @@ p {
 .blueprint h2 {
   margin: 0%;
   font-size: 2em;
-  color: #338bff;
+  color:#338bff;
   font-weight: bolder;
 }
 .blueprint img {
   width: 100%;
 }
 .wrapper {
-  min-height: calc(100vh - 249.9px);
+  min-height: calc(100vh - 249.9px)
 }
 
 .welcome {
@@ -148,7 +151,8 @@ p {
 }
 
 .courses-outter {
-  margin: 75px auto;
+  margin:75px auto;
+
 }
 
 .courses-outter h2 {
@@ -210,11 +214,12 @@ p {
   font-size: 1.5em;
 }
 
+
 /* --------------- Developmental Goal --------------  */
 .goals-wrapper {
   width: 90%;
   margin: auto;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05), 0 5px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 5px rgba(0,0,0,.05),0 5px 30px rgba(0,0,0,.2);
 }
 .goals-wrapper h2 {
   margin: 70px auto 30px auto;
@@ -227,8 +232,9 @@ p {
   font-size: 30px;
   text-align: center;
   padding: 20px 30px;
+  
 }
-.goals-inner h3 {
+.goals-inner h3{
   font-size: 22px;
   text-align: left;
   margin: 0px;
@@ -236,90 +242,19 @@ p {
 .goals-inner p {
   font-size: 20px;
   text-align: left;
-  margin: 5px 0px;
+  margin:  5px 0px;
 }
 
-/* ----------------- Resume Page -----------------  */
-.resume-wrapper {
+
+ /* ----------------- Resume Page -----------------  */
+ .resume-wrapper {
   margin-top: 100px;
-  width: 90%;
+  width: 80%;
   margin: 100px auto;
 }
-.resume-inner-info {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 50px;
-}
-.resume-inner-info img {
-  border-radius: 50%;
-  width: 250px;
-  margin: auto;
-}
 
-.resume-inner-info h3,
-.objective-inner h3,
-.education-inner h3,
-.experience-inner h3,
-.associations h3 {
-  margin: 20px 0px 0px 0px;
-  font-weight: bolder;
-  color: #338bff;
-}
-.resume-inner-info p {
-  color: rgba(0, 0, 0, 0.7);
-}
-
-/*Address, Name, Phone, Number  */
-.resume-top-info {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.resume-top-info ul li {
-  list-style: disc;
-}
-
-/* Objective  */
-
-.objective-inner p {
-  margin: 40px 0px 40px 20px;
-}
-/* Education and Experience*/
-.education,
-.experience {
-  margin: 5px 0px 5px 20px;
-}
-.experience ol li,
-.associations ol li {
-  list-style: disc;
-}
-/* ------------------ Artifact 1 Page -------------- */
-.artifact-outter h2 {
-  text-align: center;
-}
-.artifact-outter {
-  margin: 50px auto;
-}
-.artifact-outter iframe {
-  width: 100%;
-  height: 450px;
-  margin-top: 25px;
-}
-
-.description h3 {
-  margin: 0;
-}
-.objective {
-  margin: 40px auto;
-}
-.objective
-/* ==---- DRY --== ===  */
-.flex {
-  display: flex;
-}
-.text {
-  font-size: 1.3em;
-  margin: 10px 0px;
+.experience-section ul {
+  list-style:disc;
 }
 
 /* --------- Main-Footer ----------- */
@@ -337,23 +272,25 @@ p {
   flex-direction: column;
   margin: 50px auto;
   width: 80%;
+
 }
 .line {
   display: flex;
   flex-direction: column;
-  font-size: 1.3em;
+  font-size: 1.5em;
   padding-bottom: 15px;
+
 }
 .line:hover {
   transform: scale(1.1);
   transition: 2s;
+ 
 }
 .line i {
   margin-right: 10px;
   color: white;
 }
-.line a,
-.line p {
+.line a ,.line p {
   color: rgba(255, 255, 255, 0.773);
   margin: 0px 0px 5px 0px;
 }
@@ -361,6 +298,7 @@ p {
   text-decoration: #006eff underline;
   color: white;
 }
+
 
 span {
   font-size: 15px;
@@ -378,8 +316,6 @@ span {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  /* ------------------ Artifact Page Tablet -------------- */
-
   .blueprint {
     width: 100%;
   }
@@ -387,7 +323,7 @@ span {
     flex-direction: row;
     justify-content: space-between;
     width: 90%;
-    
+    font-size: 1.3em;
   }
   .artifacts-div {
     justify-content: flex-end;
@@ -397,6 +333,7 @@ span {
 
   .artifacts-div a {
     margin: auto;
+    
   }
 
   .welcome-info {
@@ -434,9 +371,10 @@ span {
   .courses-outter {
     text-align: left;
     width: 50%;
+    margin: auto;
   }
   /* ============= Developmental Goals Page Tablet=============== */
-  .goals-wrapper {
+  .goals-wrapper { 
     width: 80%;
   }
   .goals-wrapper h2 {
@@ -448,171 +386,70 @@ span {
   .goals-inner p {
     font-size: 1.6em;
   }
-
-  /* ============ Resume Tablet Page ============== */
-  .objective-inner,
-  .education-inner,
-  .experience-inner,
-  .resume-inner-info {
-    display: flex;
-  }
-  .resume-inner-info {
-    flex-direction: row;
-  }
-  .education-inner h3,
-  .experience-inner h3 {
-    margin-bottom: 15px;
-  }
-  .education p,
-  .experience p {
-    margin: 0%;
-  }
-  .resume-top-info {
-    width: 40%;
-  }
-  .resume-top-info h3 {
-    font-size: 2em;
-  }
-  .resume-top-info p,
-  .resume-top-info ul li,
-  .education-inner p,
-  .experience-inner p,
-  .experience-inner ol li,
-  .associations li,
-  .objective-inner p {
-    font-size: 1.4em;
-  }
-  .experience ol {
-    margin-left: -20px;
-  }
-  .objective-inner h3,
-  .education-inner h3,
-  .experience-inner h3 {
-    font-size: 1.5em;
-  }
-
-  .education-inner,
-  .experience-inner {
-    flex-direction: column;
-  }
 }
 
 
 
-@media only screen and (min-width: 992px) {
-  .artifact-outter h2 {
-    font-size: 1.7em;;
-  }
-  .text {
-    font-size: 1.5em;
-  }
-  .description-inner h3 {
-    font-size: 1.6em;
-  }
-  .description-inner {
-    width: 50%;
-    margin: auto;
-  }
-  
-  .description-outter {
-    display: flex;
-  }
-  .description-outter iframe {
-    width: 50%;
-  }
-  .line {
-    font-size: 1.5em;
+  @media only screen and (min-width:450px) {
+    
   }
 
-  /* ------------------ Artifact Page Desktop -------------- */
 
-  .wrapper {
-    width: 90%;
-  }
+  @media only screen and (min-width: 992px) {
+    .blueprint {
+      width: 60%;
+    }
+    .goals-wrapper { 
+      width: 70%;
+    }
+    .artifacts-div {
+      width: 40%;
+      justify-content: space-around;
+    }
+    
 
-  .resume-top-info h3 {
-    font-size: 2.2em;
-  }
-  .resume-top-info p,
-  .resume-top-info ul li,
-  .education-inner p,
-  .experience-inner p,
-  .experience-inner ol li,
-  .associations li,
-  .objective-inner p {
-    font-size: 1.5em;
-  }
-  .objective-inner h3,
-  .education-inner h3,
-  .experience-inner h3 {
-    font-size: 1.6em;
-  }
-  .blueprint {
-    width: 60%;
-  }
-  .goals-wrapper {
-    width: 70%;
-  }
-  .artifacts-div {
-    width: 40%;
-    justify-content: space-around;
-  }
+    /* ======= Nav Bar ============= */
+    .top-bar {
+      display: flex;
+      flex-direction: row;
+      background: linear-gradient(#338bff, #006eff);
+      justify-content: space-between;
+    }
 
-  /* ======= Nav Bar ============= */
-  .top-bar {
-    display: flex;
-    flex-direction: row;
-    background: linear-gradient(#338bff, #006eff);
-    justify-content: space-between;
-  }
+    #hamburger {
+      display: none;
+    }
 
-  #hamburger {
-    display: none;
-  }
+    .inner-menu {
+      display: flex;
+      flex-direction: row;
 
-  .inner-menu {
-    display: flex;
-    flex-direction: row;
-  }
+    }
 
-  .inner-menu a:hover {
-    transform: scale(1.2);
-    transition: 0.5s;
-  }
+    .inner-menu a:hover {
+      transform: scale(1.2);
+      transition: .5s;
+    }
 
-  #myLinks {
-    display: none;
+    #myLinks {
+      display: none;
+    }
+
+    .statement-inner {
+      width: 680px;
+    }
+
+    /* ============= Developmental Goals Page =============== */
+    .goals-wrapper h2 {
+      font-size: 2.5em;
+    }
+    .goals-inner h3 {
+      font-size: 2.3em;
+    }
+    .goals-inner p {
+      font-size: 2em;
+    }
+    
   }
 
-  .statement-inner {
-    width: 680px;
-  }
-
-  /* ============= Developmental Goals Page =============== */
-  .goals-wrapper h2 {
-    font-size: 2.5em;
-  }
-  .goals-inner h3 {
-    font-size: 2.3em;
-  }
-  .goals-inner p {
-    font-size: 2em;
-  }
-}
-/* Extra large devices (large laptops and desktops, 1400px and up) */
-@media only screen and (min-width: 1400px) {
-  .artifact-outter h2 {
-    font-size: 1.8em;
-  }
-  .text {
-    font-size: 1.8em;
-  }
-  .description-inner h3 {
-    font-size: 1.7em;
-  }
-  .description-outter iframe {
-    height: 600px;
-  }
-}
-
-
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
